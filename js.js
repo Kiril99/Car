@@ -46,9 +46,10 @@ function Car(mark,type,model,speed,fuel,amount,cons,color,weight){
 		document.write('Максимальная: ' + Math.round(this.amount / this.cons * 100) + 'km');
 	}
 	
-		
+getInfo();
 	
 }
+Car();
 
 var masCar =[Mercedes,Ford,Renault,Opel,Fiat];
 
@@ -89,8 +90,9 @@ function func (){
 		
 	}
 }
+func();
 
-function cikl{
+function colorCar(){
 	var colorPoisk = prompt("Введите цвет машины: ");
 	for( var i = 0; i<masCar.length; i++ ){
 		if (masCar[i]==colorPoisk) {
@@ -98,4 +100,4 @@ function cikl{
 		}
 	}
 }
-
+colorCar();
